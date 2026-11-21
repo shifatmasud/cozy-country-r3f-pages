@@ -34,7 +34,17 @@ echo 'd6e87fb655369c0a60b7c579eecc782f76efdc6e5116b71f9e06c2d77627910f  cozy-cou
 tar -xzf cozy-country-extracted-assets.tar.gz
 ```
 
-This 250,252,263-byte archive contains 1,329 OBJ meshes, 956 material records, 237 animation clips, 139 legacy animation records, 13 animator controllers, 26 avatars, two avatar masks, four terrain-data files, and 13 terrain-layer files. It includes 1,914 of 1,942 Texture2D PNG exports and 670 of 693 sprite PNG exports. The original extraction manifest and `asset_relationships.json` are included.
+This 250,252,263-byte archive contains 1,329 OBJ meshes, 956 material records, 237 animation clips, 139 legacy animation records, 13 animator controllers, 26 avatars, two avatar masks, four terrain-data files, and 13 terrain-layer files. It includes 1,914 of 1,942 Texture2D PNG exports and 670 of 693 Sprite PNG exports. The original extraction manifest and `asset_relationships.json` are included.
+
+## Recovered sprite exports
+
+The 23 Sprite PNG exports that initially failed were recovered from their serialized Unity RenderData and verified as PNG files. All 693 Sprite records now have an exported PNG, split between the full collection archive and this recovery archive. Download and extract the recovered sprites and their recovery manifest:
+
+```sh
+curl -L -O https://github.com/shifatmasud/cozy-country-r3f-pages/releases/download/v1.0.0/cozy-country-recovered-sprites.tar.gz
+echo '456be520e71249197e9d9af81eac0b1a983f4396e6da4ff899d491b04c2e4829  cozy-country-recovered-sprites.tar.gz' | sha256sum -c -
+tar -xzf cozy-country-recovered-sprites.tar.gz
+```
 
 ## Supplemental shaders and texture records
 
@@ -48,7 +58,7 @@ echo '017ca25c3dd2ec7e3cd282448357700558c0d4d2663d603b94c877d09f73cf61  cozy-cou
 tar -xzf cozy-country-supplemental-assets.tar.gz
 ```
 
-The supplemental manifest records 359 Shader objects, 30 ComputeShader objects, one ShaderVariantCollection, two Texture2DArray objects, one Texture3D, three Cubemaps, and two RenderTextures. Shader serialized data and parsed JSON are included for all 359 shaders; UnityPy generated text dumps for 285, while parsing failed for 74, so those 74 are represented by their raw Unity serialization and metadata rather than a recovered shader text dump. The archive also includes raw serialized data and metadata for all 28 Texture2D records that failed PNG export; a display PNG was reconstructed for PropTex from its RGBAFloat data. The other 27 Texture2D records have zero dimensions and no inline pixel data or stream path in the APK, so their pixels could not be reconstructed. The original extraction recorded 23 additional Sprite PNG export failures.
+The supplemental manifest records 359 Shader objects, 30 ComputeShader objects, one ShaderVariantCollection, two Texture2DArray objects, one Texture3D, three Cubemaps, and two RenderTextures. Shader serialized data and parsed JSON are included for all 359 shaders; UnityPy generated text dumps for 285, while parsing failed for 74, so those 74 are represented by their raw Unity serialization and metadata rather than a recovered shader text dump. The archive also includes raw serialized data and metadata for all 28 Texture2D records that failed PNG export; a display PNG was reconstructed for PropTex from its RGBAFloat data. The other 27 Texture2D records have zero dimensions and no inline pixel data or stream path in the APK, so their pixels could not be reconstructed.
 
 The small Pages scene uses a selected subset of seven meshes and nine textures, listed in `public/assets/scene-assets.json`.
 
