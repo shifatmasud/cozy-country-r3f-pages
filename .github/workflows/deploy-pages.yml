@@ -1,9 +1,10 @@
-name: Deploy Cozy Country scene
+name: Deploy Cozy Country full asset browser
 on:
   push:
     branches: [main]
     paths:
       - ".github/workflows/deploy-pages.yml"
+      - "README.md"
   release:
     types: [published]
   workflow_dispatch:
@@ -24,20 +25,54 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Download and verify the converted scene bundle
+      - name: Download and verify the full browser bundle
         run: |
-          curl --fail --location --retry 3 --retry-delay 2 \
-            https://github.com/shifatmasud/cozy-country-r3f-pages/releases/download/v1.0.0/cozy-country-r3f-scene.zip \
-            --output cozy-country-r3f-scene.zip
-          echo 'd34f4f3fd839732fa73352ff19c612a786334521a56c6d6207354d9acef55e58  cozy-country-r3f-scene.zip' | sha256sum -c -
+          base=https://github.com/shifatmasud/cozy-country-r3f-pages/releases/download/v1.0.0
+          curl --fail --location --retry 3 --retry-delay 2 "$base/cozy-country-r3f-full-browser.zip" --output cozy-country-r3f-full-browser.zip
+          echo 'e3f974ff8a20407cc64a7c690cecfd88d6047e89b43a82312a20328b857b005c  cozy-country-r3f-full-browser.zip' | sha256sum -c -
           mkdir -p .work site
-          unzip -q cozy-country-r3f-scene.zip -d .work
+          unzip -q cozy-country-r3f-full-browser.zip -d .work
           test -f .work/cozy-country-r3f-scene/package.json
-      - name: Build the scene
+          test -f .work/cozy-country-r3f-scene/scripts/extract-public-assets.py
+      - name: Download and verify extracted asset archive parts
         run: |
-          npm --prefix .work/cozy-country-r3f-scene ci
-          npm --prefix .work/cozy-country-r3f-scene run build
-          cp -R .work/cozy-country-r3f-scene/dist/. site/
+          base=https://github.com/shifatmasud/cozy-country-r3f-pages/releases/download/v1.0.0
+          curl --fail --location --retry 3 "$base/cozy-country-extracted-assets.tar.gz.part0" --output cozy-country-extracted-assets.tar.gz.part0
+          curl --fail --location --retry 3 "$base/cozy-country-extracted-assets.tar.gz.part1" --output cozy-country-extracted-assets.tar.gz.part1
+          curl --fail --location --retry 3 "$base/cozy-country-extracted-assets.tar.gz.part2" --output cozy-country-extracted-assets.tar.gz.part2
+          printf '%s\n' \
+            '18fd3d17c2770e77fb5c33256fa844682c45fffff5ef08eeeeb66bb632bc4302  cozy-country-extracted-assets.tar.gz.part0' \
+            'ace92b200c92c874fe58dfb5561b8f6c0805afd7bb39c106c2d84fd2aa2f6fb7  cozy-country-extracted-assets.tar.gz.part1' \
+            'ed3e3f39c615719d90f2ee252ef7258e9299bfe5859bdc9f0394d63d56e09edd  cozy-country-extracted-assets.tar.gz.part2' \
+            | sha256sum -c -
+          cat cozy-country-extracted-assets.tar.gz.part0 cozy-country-extracted-assets.tar.gz.part1 cozy-country-extracted-assets.tar.gz.part2 > cozy-country-extracted-assets.tar.gz
+          echo 'd6e87fb655369c0a60b7c579eecc782f76efdc6e5116b71f9e06c2d77627910f  cozy-country-extracted-assets.tar.gz' | sha256sum -c -
+          gzip -t cozy-country-extracted-assets.tar.gz
+      - name: Extract static browser assets and validate inventories
+        run: |
+          project=.work/cozy-country-r3f-scene
+          python3 "$project/scripts/extract-public-assets.py" \
+            cozy-country-extracted-assets.tar.gz \
+            "$project/public/assets" \
+            "$project/src/generated/assetCatalog.json" \
+            "$project/src/generated/threeMaterialsFull.json"
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          m = json.loads(Path('.work/cozy-country-r3f-scene/public/assets/extraction-manifest.json').read_text())
+          assert m['meshCount'] == 1329, m
+          assert m['originalTexturePngCount'] == 1914, m
+          assert m['materialTextureReferenceCount'] == 763, m
+          print('Verified complete public asset inventory:', m)
+          PY
+      - name: Install and build the browser
+        run: |
+          project=.work/cozy-country-r3f-scene
+          npm --prefix "$project" ci
+          npm --prefix "$project" run build
+          cp -R "$project/dist/." site/
+          test -s site/index.html
+          test -s site/assets/extraction-manifest.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
