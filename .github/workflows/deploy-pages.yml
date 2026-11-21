@@ -1,5 +1,4 @@
 name: Deploy Cozy Country scene
-
 on:
   push:
     branches: [main]
@@ -9,43 +8,52 @@ on:
     types: [published]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+permissions: {}
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
-      - name: Download the complete scene bundle
+          node-version: 22
+      - name: Download and verify the converted scene bundle
         run: |
           curl --fail --location --retry 3 --retry-delay 2 \
             https://github.com/shifatmasud/cozy-country-r3f-pages/releases/download/v1.0.0/cozy-country-r3f-scene.zip \
             --output cozy-country-r3f-scene.zip
+          echo 'd34f4f3fd839732fa73352ff19c612a786334521a56c6d6207354d9acef55e58  cozy-country-r3f-scene.zip' | sha256sum -c -
           mkdir -p .work site
           unzip -q cozy-country-r3f-scene.zip -d .work
           test -f .work/cozy-country-r3f-scene/package.json
       - name: Build the scene
         run: |
-          npm --prefix .work/cozy-country-r3f-scene install
+          npm --prefix .work/cozy-country-r3f-scene ci
           npm --prefix .work/cozy-country-r3f-scene run build
           cp -R .work/cozy-country-r3f-scene/dist/. site/
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: ./site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
