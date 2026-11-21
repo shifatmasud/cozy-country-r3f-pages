@@ -1,0 +1,2 @@
+Scene subset: 7 OBJ meshes and 9 PNG textures selected from the full static extraction. Exact source object names, Unity path IDs, source asset container, and copied paths are listed in scene-assets.json.
+The APK is excluded. This scene does not embed Unity animation playback. See the project README and ATTRIBUTION for the static-analysis and provenance notes.

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap');
+:root { font-family: 'DM Sans', sans-serif; color: #29382e; background: #d5e4dc; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+html, body, #root { width: 100%; height: 100%; min-height: 100%; margin: 0; overflow: hidden; }
+.app-shell { position: relative; width: 100%; height: 100%; min-height: 560px; overflow: hidden; background: #d5e4dc; }
+.scene-canvas { position: absolute !important; inset: 0; }
+.title-card { position: absolute; left: clamp(22px, 4vw, 58px); top: clamp(24px, 5vh, 56px); z-index: 2; max-width: 320px; padding: 18px 22px 19px; border: 1px solid rgba(255,255,255,.66); border-radius: 18px; background: rgba(247,250,243,.78); box-shadow: 0 8px 30px rgba(52,75,57,.08); backdrop-filter: blur(12px); }
+.eyebrow { font-size: 10px; font-weight: 600; letter-spacing: .18em; color: #74836e; }
+h1 { margin: 8px 0 5px; color: #304333; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(25px, 3vw, 34px); font-weight: 500; letter-spacing: -.025em; }
+.title-card p { margin: 0; color: #74816f; font-size: 12px; }
+.scene-note { position: absolute; right: clamp(18px, 3vw, 42px); top: clamp(24px, 5vh, 56px); z-index: 2; padding: 12px 15px; border: 1px solid rgba(255,255,255,.64); border-radius: 999px; background: rgba(247,250,243,.76); color: #677464; font-size: 11px; backdrop-filter: blur(10px); }
+.dot { display: inline-block; width: 7px; height: 7px; margin: 0 7px 1px 0; border-radius: 50%; background: #8caa73; }
+.separator { margin: 0 6px; color: #aeb8a7; }
+.asset-note { position: absolute; right: clamp(18px, 3vw, 42px); bottom: 23px; z-index: 2; padding: 9px 12px; border-radius: 999px; background: rgba(247,250,243,.7); color: #738071; font-size: 10px; letter-spacing: .02em; }
+.asset-note span { padding: 0 4px; color: #9ea994; }
+@media (max-width: 650px) { .title-card { max-width: 255px; padding: 15px 17px; } .scene-note { top: auto; bottom: 20px; left: 18px; right: auto; } .asset-note { right: 18px; bottom: 66px; } }

@@ -1,0 +1,20 @@
+{
+  "selected_for_scene": [
+    {"id":"sheep","kind":"mesh","unity_name":"sheep_low.001","path_id":1461,"source":"sharedassets2.assets","extracted":"meshes/sheep_low.001__1a6a680d__1461.obj","scene_file":"models/sheep.obj","bytes":78060},
+    {"id":"wheat","kind":"mesh","unity_name":"Wheat","path_id":1513,"source":"sharedassets2.assets","extracted":"meshes/Wheat__1a6a680d__1513.obj","scene_file":"models/wheat.obj","bytes":1296},
+    {"id":"tree","kind":"mesh","unity_name":"Branched_Tree_1A3_1","path_id":1225,"source":"sharedassets2.assets","extracted":"meshes/Branched_Tree_1A3_1__1a6a680d__1225.obj","scene_file":"models/tree.obj","bytes":886222},
+    {"id":"flower","kind":"mesh","unity_name":"SM_Plant_Grass_Veronica_Flower_04","path_id":1457,"source":"sharedassets2.assets","extracted":"meshes/SM_Plant_Grass_Veronica_Flower_04__1a6a680d__1457.obj","scene_file":"models/flower.obj","bytes":259847},
+    {"id":"grass","kind":"mesh","unity_name":"SM_Grass_024_c_LOD0","path_id":1425,"source":"sharedassets2.assets","extracted":"meshes/SM_Grass_024_c_LOD0__1a6a680d__1425.obj","scene_file":"models/grass.obj","bytes":339422},
+    {"id":"fence","kind":"mesh","unity_name":"StoneFence_2_LOD1","path_id":1422,"source":"sharedassets2.assets","extracted":"meshes/StoneFence_2_LOD1__1a6a680d__1422.obj","scene_file":"models/fence.obj","bytes":46116},
+    {"id":"rock","kind":"mesh","unity_name":"Rock_2_LOD0","path_id":1193,"source":"sharedassets2.assets","extracted":"meshes/Rock_2_LOD0__1a6a680d__1193.obj","scene_file":"models/rock.obj","bytes":19067},
+    {"id":"sheep-skin","kind":"texture","unity_name":"T_Sheep_Skin1_a","path_id":404,"source":"sharedassets2.assets","extracted":"textures/T_Sheep_Skin1_a__1a6a680d__404.png","scene_file":"textures/sheep-skin.png","bytes":98680},
+    {"id":"wheat-atlas","kind":"texture","unity_name":"Wheat_a","path_id":942,"source":"sharedassets2.assets","extracted":"textures/Wheat_a__1a6a680d__942.png","scene_file":"textures/wheat-atlas.png","bytes":49671},
+    {"id":"tree-bark","kind":"texture","unity_name":"Bark_Color","path_id":593,"source":"sharedassets2.assets","extracted":"textures/Bark_Color__1a6a680d__593.png","scene_file":"textures/tree-bark.png","bytes":102196},
+    {"id":"tree-leaves","kind":"texture","unity_name":"AN_Broadleaf_Leaves","path_id":524,"source":"sharedassets2.assets","extracted":"textures/AN_Broadleaf_Leaves__1a6a680d__524.png","scene_file":"textures/tree-leaves.png","bytes":12347},
+    {"id":"tree-bark-normal","kind":"texture","unity_name":"Bark_Normal","path_id":446,"source":"sharedassets2.assets","extracted":"textures/Bark_Normal__1a6a680d__446.png","scene_file":"textures/tree-bark-normal.png","bytes":98210},
+    {"id":"flower-albedo","kind":"texture","unity_name":"T_Plant_Grass_BCO","path_id":857,"source":"sharedassets2.assets","extracted":"textures/T_Plant_Grass_BCO__1a6a680d__857.png","scene_file":"textures/flower-albedo.png","bytes":339560},
+    {"id":"grass-albedo","kind":"texture","unity_name":"T_Grass_0024_D","path_id":710,"source":"sharedassets2.assets","extracted":"textures/T_Grass_0024_D__1a6a680d__710.png","scene_file":"textures/grass-albedo.png","bytes":208737},
+    {"id":"fence-albedo","kind":"texture","unity_name":"StoneFence_2_LOD1_Albedo","path_id":656,"source":"sharedassets2.assets","extracted":"textures/StoneFence_2_LOD1_Albedo__1a6a680d__656.png","scene_file":"textures/fence-albedo.png","bytes":216689},
+    {"id":"rock-albedo","kind":"texture","unity_name":"TexasRockSurface_albedo","path_id":827,"source":"sharedassets2.assets","extracted":"textures/TexasRockSurface_albedo__1a6a680d__827.png","scene_file":"textures/rock-albedo.png","bytes":110750}
+  ]
+}
