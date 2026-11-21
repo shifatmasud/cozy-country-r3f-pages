@@ -4,8 +4,9 @@ on:
   push:
     branches: [main]
     paths:
-      - "cozy-country-r3f-scene.zip"
       - ".github/workflows/deploy-pages.yml"
+  release:
+    types: [published]
   workflow_dispatch:
 
 permissions:
@@ -25,36 +26,26 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Check for the complete project bundle
-        id: bundle
-        run: |
-          if [ -f cozy-country-r3f-scene.zip ]; then
-            echo "found=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "found=false" >> "$GITHUB_OUTPUT"
-            echo "Scene bundle has not been uploaded yet; skipping deployment."
-          fi
       - uses: actions/setup-node@v4
-        if: steps.bundle.outputs.found == 'true'
         with:
           node-version: 20
-      - name: Unpack and build the scene
-        if: steps.bundle.outputs.found == 'true'
+      - name: Download the complete scene bundle
         run: |
+          curl --fail --location --retry 3 --retry-delay 2 \
+            https://github.com/shifatmasud/cozy-country-r3f-pages/releases/download/v1.0.0/cozy-country-r3f-scene.zip \
+            --output cozy-country-r3f-scene.zip
           mkdir -p .work site
           unzip -q cozy-country-r3f-scene.zip -d .work
-          project=.work/cozy-country-r3f-scene
-          test -f "$project/package.json"
-          npm --prefix "$project" install
-          npm --prefix "$project" run build
-          cp -R "$project/dist/." site/
+          test -f .work/cozy-country-r3f-scene/package.json
+      - name: Build the scene
+        run: |
+          npm --prefix .work/cozy-country-r3f-scene install
+          npm --prefix .work/cozy-country-r3f-scene run build
+          cp -R .work/cozy-country-r3f-scene/dist/. site/
       - uses: actions/configure-pages@v5
-        if: steps.bundle.outputs.found == 'true'
       - uses: actions/upload-pages-artifact@v3
-        if: steps.bundle.outputs.found == 'true'
         with:
           path: ./site
       - name: Deploy to GitHub Pages
         id: deployment
-        if: steps.bundle.outputs.found == 'true'
         uses: actions/deploy-pages@v4
