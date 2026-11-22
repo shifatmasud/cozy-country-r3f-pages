@@ -6,6 +6,12 @@ A React Three Fiber and Three.js study of the Cozy Country v2.6.5 Unity assets. 
 
 https://shifatmasud.github.io/cozy-country-r3f-pages/
 
+### Pasture material-mapping demo
+
+https://shifatmasud.github.io/cozy-country-r3f-pages/pasture-demo/
+
+The seven-model scene uses OBJ group names to map the tree bark and leaf textures. It is an approximate partial conversion; it does not reproduce Unity shaders or animations. The full asset browser remains at the root URL.
+
 The full asset-browser build completed successfully on GitHub Pages. It statically reads the extracted asset archive during build; it does not install or execute the APK.
 
 ## Full browser source bundle

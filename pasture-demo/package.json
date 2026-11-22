@@ -1,0 +1,24 @@
+{
+  "name": "cozy-country-r3f-scene",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test:color-space": "node scripts/test-texture-color-space.mjs",
+    "test:instance-batches": "node scripts/test-instance-batches.mjs",
+    "test:scene-materials": "node scripts/test-scene-materials.mjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.4.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "three": "^0.181.2"
+  },
+  "devDependencies": {
+    "vite": "^7.2.2"
+  }
+}
