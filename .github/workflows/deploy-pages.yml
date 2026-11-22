@@ -1,1 +1,105 @@
-bmFtZTogRGVwbG95IENvenkgQ291bnRyeSBmdWxsIGFzc2V0IGJyb3dzZXIKb246CiAgcHVzaDoKICAgIGJyYW5jaGVzOiBbbWFpbl0KICAgIHBhdGhzOgogICAgICAtICIuZ2l0aHViL3dvcmtmbG93cy9kZXBsb3ktcGFnZXMueW1sIgogICAgICAtICJSRUFETUUubWQiCiAgcmVsZWFzZToKICAgIHR5cGVzOiBbcHVibGlzaGVkXQogIHdvcmtmbG93X2Rpc3BhdGNoOgoKcGVybWlzc2lvbnM6IHt9Cgpjb25jdXJyZW5jeToKICBncm91cDogcGFnZXMKICBjYW5jZWwtaW4tcHJvZ3Jlc3M6IHRydWUKCmpvYnM6CiAgYnVpbGQ6CiAgICBydW5zLW9uOiB1YnVudHUtbGF0ZXN0CiAgICBwZXJtaXNzaW9uczoKICAgICAgY29udGVudHM6IHJlYWQKICAgIHN0ZXBzOgogICAgICAtIHVzZXM6IGFjdGlvbnMvY2hlY2tvdXRAdjQKICAgICAgLSB1c2VzOiBhY3Rpb25zL3NldHVwLW5vZGVAdjQKICAgICAgICB3aXRoOgogICAgICAgICAgbm9kZS12ZXJzaW9uOiAyMgogICAgICAtIG5hbWU6IERvd25sb2FkIGFuZCB2ZXJpZnkgdGhlIGZ1bGwgYnJvd3NlciBidW5kbGUKICAgICAgICBydW46IHwKICAgICAgICAgIGJhc2U9aHR0cHM6Ly9naXRodWIuY29tL3NoaWZhdG1hc3VkL2NvenktY291bnRyeS1yM2YtcGFnZXMvcmVsZWFzZXMvZG93bmxvYWQvdjEuMC4wCiAgICAgICAgICBjdXJsIC0tZmFpbCAtLWxvY2F0aW9uIC0tcmV0cnkgMyAtLXJldHJ5LWRlbGF5IDIgIiRiYXNlL2NvenktY291bnRyeS1yM2YtZnVsbC1icm93c2VyLnppcCIgLS1vdXRwdXQgY296eS1jb3VudHJ5LXIzZi1mdWxsLWJyb3dzZXIuemlwCiAgICAgICAgICBlY2hvICdlM2Y5NzRmZjhhMjA0MDdjYzY0YTdjNjkwY2VjZmQ4OGQ2MDQ3ZTg5YjQzYTgyMzEyYTIwMzI4Yjg1N2IwMDVjICBjb3p5LWNvdW50cnktcjNmLWZ1bGwtYnJvd3Nlci56aXAnIHwgc2hhMjU2c3VtIC1jIC0KICAgICAgICAgIG1rZGlyIC1wIC53b3JrIHNpdGUKICAgICAgICAgIHVuemlwIC1xIGNvenktY291bnRyeS1yM2YtZnVsbC1icm93c2VyLnppcCAtZCAud29yawogICAgICAgICAgdGVzdCAtZiAud29yay9jb3p5LWNvdW50cnktcjNmLXNjZW5lL3BhY2thZ2UuanNvbgogICAgICAgICAgdGVzdCAtZiAud29yay9jb3p5LWNvdW50cnktcjNmLXNjZW5lL3NjcmlwdHMvZXh0cmFjdC1wdWJsaWMtYXNzZXRzLnB5CiAgICAgIC0gbmFtZTogR3VhcmQgdGhlIHZpZXdlciBiZWZvcmUgc3RhcnRpbmcgV2ViR0wgMgogICAgICAgIHJ1bjogcHl0aG9uMyBzY3JpcHRzL2FwcGx5LXdlYmdsMi1wcmVmbGlnaHQucHkgLndvcmsvY296eS1jb3VudHJ5LXIzZi1zY2VuZQogICAgICAtIG5hbWU6IERvd25sb2FkIGFuZCB2ZXJpZnkgZXh0cmFjdGVkIGFzc2V0IGFyY2hpdmUgcGFydHMKICAgICAgICBydW46IHwKICAgICAgICAgIGJhc2U9aHR0cHM6Ly9naXRodWIuY29tL3NoaWZhdG1hc3VkL2NvenktY291bnRyeS1yM2YtcGFnZXMvcmVsZWFzZXMvZG93bmxvYWQvdjEuMC4wCiAgICAgICAgICBjdXJsIC0tZmFpbCAtLWxvY2F0aW9uIC0tLXJldHJ5IDMgIiRiYXNlL2NvenktY291bnRyeS1leHRyYWN0ZWQtYXNzZXRzLnRhci5nei5wYXJ0MCIgLS1vdXRwdXQgY296eS1jb3VudHJ5LWV4dHJhY3RlZC1hc3NldHMudGFyLmd6LnBhcnQwCiAgICAgICAgICBjdXJsIC0tZmFpbCAtLWxvY2F0aW9uIC0tLXJldHJ5IDMgIiRiYXNlL2NvenktY291bnRyeS1leHRyYWN0ZWQtYXNzZXRzLnRhci5nei5wYXJ0MSIgLS1vdXRwdXQgY296eS1jb3VudHJ5LWV4dHJhY3RlZC1hc3NldHMudGFyLmd6LnBhcnQxCiAgICAgICAgICBjdXJsIC0tZmFpbCAtLWxvY2F0aW9uIC0tLXJldHJ5IDMgIiRiYXNlL2NvenktY291bnRyeS1leHRyYWN0ZWQtYXNzZXRzLnRhci5nei5wYXJ0MiIgLS1vdXRwdXQgY296eS1jb3p5LWNvdW50cnktZXh0cmFjdGVkLWFzc2V0cy50YXIuZ3oucGFydDIKICAgICAgICAgIHByaW50ZiAnJXMlXG4nIFwKICAgICAgICAgICAgJzE4ZmQzZDE3YzI3NzBlNzdmYjVjMzMyNTZmYTg0NDY4MmM0NWZmZmZmNWVmMDhlZWVlYjY2YmI2MzJiYzQzMDIgIGNvenktY291bnRyeS1leHRyYWN0ZWQtYXNzZXRzLnRhci5nei5wYXJ0MCcgXAogICAgICAgICAgICAnYWNlOTJiMjAwYzkyYzg3NGZlNThkZmI1NTYxYjhmNmMwODA1YWZkN2JiMzljMTA2YzJkODRmZDJhYTJmNmZiNyAgY296eS1jb3VudHJ5LWV4dHJhY3RlZC1hc3NldHMudGFyLmd6LnBhcnQxJyBcCiAgICAgICAgICAgICdlZDNlM2YzOWM2MTU3MTlkOTBmMmVlMjUyZWY3MjU4ZTkyOTliZmU1ODU5YmRjOWYwMzk0ZDYzZDU2ZTA5ZWRkICBjb3p5LWNvdW50cnktZXh0cmFjdGVkLWFzc2V0cy50YXIuZ3oucGFydDInIFwKICAgICAgICAgICAgfCBzaGEyNTZzdW0gLWMgLQogICAgICAgICAgY2F0IGNvenktY291bnRyeS1leHRyYWN0ZWQtYXNzZXRzLnRhci5nei5wYXJ0MCBjb3p5LWNvdW50cnktZXh0cmFjdGVkLWFzc2V0cy50YXIuZ3oucGFydDEgY296eS1jb3VudHJ5LWV4dHJhY3RlZC1hc3NldHMudGFyLmd6LnBhcnQyID4gY296eS1jb3VudHJ5LWV4dHJhY3RlZC1hc3NldHMudGFyLmd6CiAgICAgICAgICBlY2hvICdkNmU4N2ZiNjU1MzY5YzBhNjBiN2M1NzllZWNjNzgyZjc2ZWZkYzZlNTExNmI3MWY5ZTA2YzJkNzc2Mjc5MTBmICBjb3p5LWNvdW50cnktZXh0cmFjdGVkLWFzc2V0cy50YXIuZ3onIHwgc2hhMjU2c3VtIC1jIC0KICAgICAgICAgIGd6aXAgLXQgY296eS1jb3VudHJ5LWV4dHJhY3RlZC1hc3NldHMudGFyLmd6CiAgICAgIC0gbmFtZTogRXh0cmFjdCBzdGF0aWMgYnJvd3NlciBhc3NldHMgYW5kIHZhbGlkYXRlIGludmVudG9yaWVzCiAgICAgICAgcnVuOiB8CiAgICAgICAgICBwcm9qZWN0PS53b3JrL2NvenktY291bnRyeS1yM2Ytc2NlbmUKICAgICAgICAgIHB5dGhvbiAzICIkcHJvamVjdC9zY3JpcHRzL2V4dHJhY3QtcHVibGljLWFzc2V0cy5weSIgXAogICAgICAgICAgICBjb3p5LWNvdW50cnktZXh0cmFjdGVkLWFzc2V0cy50YXIuZ3ogXAogICAgICAgICAgICAiJHByb2plY3QvcHVibGljL2Fzc2V0cyIgXAogICAgICAgICAgICAiJHByb2plY3Qvc3JjL2dlbmVyYXRlZC9hc3NldENhdGFsb2cuanNvbiIgXAogICAgICAgICAgICAiJHByb2plY3Qvc3JjL2dlbmVyYXRlZC90aHJlZU1hdGVyaWFsc0Z1bGwuanNvbiIKICAgICAgICAgIHB5dGhvbjMgLSA8PCdQWScKICAgICAgICAgIGltcG9ydCBqc29uCiAgICAgICAgICBmcm9tIHBhdGhsaWIgaW1wb3J0IFBhdGgKICAgICAgICAgIG0gPSBqc29uLmxvYWRzKFBhdGgoJy53b3JrL2NvenktY291bnRyeS1yM2Ytc2NlbmUvcHVibGljL2Fzc2V0cy9leHRyYWN0aW9uLW1hbmlmZXN0Lmpzb24nKS5yZWFkX3RleHQoKSkKICAgICAgICAgIGFzc2VydCBtWydtZXNoQ291bnQnXSA9PSAxMzI5LCBtCiAgICAgICAgICBhc3NlcnQgbVsn b3JpZ2luYWxUZXh0dXJlUG5nQ291bnQnXSA9PSAxOTE0LCBtCiAgICAgICAgICBhc3NlcnQgbVsn bWF0ZXJpYWxUZXh0dXJlUmVmZXJlbmNlQ291bnQnXSA9PSA3NjMsIG0KICAgICAgICAgIHByaW50KCdWZXJpZmllZCBjb21wbGV0ZSBwdWJsaWMgYXNzZXQgaW52ZW50b3J5OicsIG0pCiAgICAgICAgICBQUwogICAgICAtIG5hbWU6IEluc3RhbGwgYW5kIGJ1aWxkIHRoZSBicm93c2VyCiAgICAgICAgcnVuOiB8CiAgICAgICAgICBwcm9qZWN0PS53b3JrL2NvenktY291bnRyeS1yM2Ytc2NlbmUKICAgICAgICAgIG5wbSAtLXByZWZpeCAiJHByb2plY3QiIGNpCiAgICAgICAgICBucG0gLS1wcmVmaXggIiRwcm9qZWN0IiBydW4gYnVpbGQKICAgICAgICAgIGNwIC1SICIkcHJvamVjdC9kaXN0Ly4iIHNpdGUvCiAgICAgICAgICB0ZXN0IC1zIHNpdGUvaW5kZXguaHRtbAogICAgICAgICAgdGVzdCAtcyBzaXRlL2Fzc2V0cy9leHRyYWN0aW9uLW1hbmlmZXN0Lmpzb24KICAgICAgICAgIGRlbW89cGFzdHVyZS1kZW1vCiAgICAgICAgICBsbiAtcyAiJChwd2QpLyRwcm9qZWN0L25vZGVfbW9kdWxlcyIgIiRkZW1vL25vZGVfbW9kdWxlcyIKICAgICAgICAgIG5wbSAtLXByZWZpeCAiJGRlbW8iIHJ1biB0ZXN0OnNjZW5lLW1hdGVyaWFscwogICAgICAgICAgbnBtIC0tcHJlZml4ICIkZGVtbyIgcnVuIHRlc3Q6aW5zdGFuY2UtYmF0Y2hlcwogICAgICAgICAgbnBtIC0tcHJlZml4ICIkZGVtbyIgcnVuIHRlc3Q6Y29sb3Itc3BhY2UKICAgICAgICAgIG5wbSAtLXByZWZpeCAiJGRlbW8iIHJ1biBidWlsZCAtLSAtLWJhc2UgL2NvenktY291bnRyeS1yM2YtcGFnZXMvcGFzdHVyZS1kZW1vLwogICAgICAgICAgbWtkaXIgLXAgc2l0ZS9wYXN0dXJlLWRlbW8KICAgICAgICAgIGNwIC1SICIkZGVtby9kaXN0Ly4iIHNpdGUvcGFzdHVyZS1kZW1vLwogICAgICAgICAgdGVzdCAtcyBzaXRlL3Bhc3R1cmUtZGVtby9pbmRleC5odG1sCiAgICAgIC0gdXNlczogYWN0aW9ucy9jb25maWd1cmUtcGFnZXNAdjUKICAgICAgLSB1c2VzOiBhY3Rpb25zL3VwbG9hZC1wYWdlcy1hcnRpZmFjdEB2NAogICAgICAgIHdpdGg6CiAgICAgICAgICBwYXRoOiAuL3NpdGUKICBkZXBsb3k6CiAgICBuZWVkczogYnVpbGQKICAgIHJ1bnMtb246IHVidW50dS1sYXRlc3QKICAgIHBlcm1pc3Npb25zOgogICAgICBhY3Rpb25zOiByZWFkCiAgICAgIHBhZ2VzOiB3cml0ZQogICAgICBpZC10b2tlbjogd3JpdGUKICAgIGVudmlyb25tZW50OgogICAgICBuYW1lOiBnaXRodWItcGFnZXMKICAgICAgdXJsOiAke3sgc3RlcHMuZGVwbG95bWVudC5vdXRwdXRzLnBhZ2VfdXJsIH19CiAgICBzdGVwczoKICAgICAgLSBuYW1lOiBEZXBsb3kgdG8gR2l0SHViIFBhZ2VzCiAgICAgICAgaWQ6IGRlcGxveW1lbnQKICAgICAgICB1c2VzOiBhY3Rpb25zL2RlcGxveS1wYWdlc0B2NAo=
+name: Deploy Cozy Country full asset browser
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/deploy-pages.yml"
+      - "README.md"
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Download and verify the full browser bundle
+        run: |
+          base=https://github.com/shifatmasud/cozy-country-r3f-pages/releases/download/v1.0.0
+          curl --fail --location --retry 3 --retry-delay 2 "$base/cozy-country-r3f-full-browser.zip" --output cozy-country-r3f-full-browser.zip
+          echo 'e3f974ff8a20407cc64a7c690cecfd88d6047e89b43a82312a20328b857b005c  cozy-country-r3f-full-browser.zip' | sha256sum -c -
+          mkdir -p .work site
+          unzip -q cozy-country-r3f-full-browser.zip -d .work
+          test -f .work/cozy-country-r3f-scene/package.json
+          test -f .work/cozy-country-r3f-scene/scripts/extract-public-assets.py
+      - name: Guard the viewer before starting WebGL 2
+        run: python3 scripts/apply-webgl2-preflight.py .work/cozy-country-r3f-scene
+      - name: Download and verify extracted asset archive parts
+        run: |
+          base=https://github.com/shifatmasud/cozy-country-r3f-pages/releases/download/v1.0.0
+          curl --fail --location --retry 3 "$base/cozy-country-extracted-assets.tar.gz.part0" --output cozy-country-extracted-assets.tar.gz.part0
+          curl --fail --location --retry 3 "$base/cozy-country-extracted-assets.tar.gz.part1" --output cozy-country-extracted-assets.tar.gz.part1
+          curl --fail --location --retry 3 "$base/cozy-country-extracted-assets.tar.gz.part2" --output cozy-country-extracted-assets.tar.gz.part2
+          printf '%s\n' \
+            '18fd3d17c2770e77fb5c33256fa844682c45fffff5ef08eeeeb66bb632bc4302  cozy-country-extracted-assets.tar.gz.part0' \
+            'ace92b200c92c874fe58dfb5561b8f6c0805afd7bb39c106c2d84fd2aa2f6fb7  cozy-country-extracted-assets.tar.gz.part1' \
+            'ed3e3f39c615719d90f2ee252ef7258e9299bfe5859bdc9f0394d63d56e09edd  cozy-country-extracted-assets.tar.gz.part2' \
+            | sha256sum -c -
+          cat cozy-country-extracted-assets.tar.gz.part0 cozy-country-extracted-assets.tar.gz.part1 cozy-country-extracted-assets.tar.gz.part2 > cozy-country-extracted-assets.tar.gz
+          echo 'd6e87fb655369c0a60b7c579eecc782f76efdc6e5116b71f9e06c2d77627910f  cozy-country-extracted-assets.tar.gz' | sha256sum -c -
+          gzip -t cozy-country-extracted-assets.tar.gz
+      - name: Extract static browser assets and validate inventories
+        run: |
+          project=.work/cozy-country-r3f-scene
+          python3 "$project/scripts/extract-public-assets.py" \
+            cozy-country-extracted-assets.tar.gz \
+            "$project/public/assets" \
+            "$project/src/generated/assetCatalog.json" \
+            "$project/src/generated/threeMaterialsFull.json"
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          m = json.loads(Path('.work/cozy-country-r3f-scene/public/assets/extraction-manifest.json').read_text())
+          assert m['meshCount'] == 1329, m
+          assert m['originalTexturePngCount'] == 1914, m
+          assert m['materialTextureReferenceCount'] == 763, m
+          print('Verified complete public asset inventory:', m)
+          PY
+      - name: Install and build the browser
+        run: |
+          project=.work/cozy-country-r3f-scene
+          npm --prefix "$project" ci
+          npm --prefix "$project" run build
+          cp -R "$project/dist/." site/
+          test -s site/index.html
+          test -s site/assets/extraction-manifest.json
+          demo=pasture-demo
+          ln -s "$(pwd)/$project/node_modules" "$demo/node_modules"
+          npm --prefix "$demo" run test:scene-materials
+          npm --prefix "$demo" run test:instance-batches
+          npm --prefix "$demo" run test:color-space
+          npm --prefix "$demo" run build -- --base /cozy-country-r3f-pages/pasture-demo/
+          mkdir -p site/pasture-demo
+          cp -R "$demo/dist/." site/pasture-demo/
+          test -s site/pasture-demo/index.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
