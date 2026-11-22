@@ -75,6 +75,15 @@ jobs:
           cp -R "$project/dist/." site/
           test -s site/index.html
           test -s site/assets/extraction-manifest.json
+          demo=pasture-demo
+          ln -s "$(pwd)/$project/node_modules" "$demo/node_modules"
+          npm --prefix "$demo" run test:scene-materials
+          npm --prefix "$demo" run test:instance-batches
+          npm --prefix "$demo" run test:color-space
+          npm --prefix "$demo" run build -- --base /cozy-country-r3f-pages/pasture-demo/
+          mkdir -p site/pasture-demo
+          cp -R "$demo/dist/." site/pasture-demo/
+          test -s site/pasture-demo/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
