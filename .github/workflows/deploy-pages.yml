@@ -34,6 +34,8 @@ jobs:
           unzip -q cozy-country-r3f-full-browser.zip -d .work
           test -f .work/cozy-country-r3f-scene/package.json
           test -f .work/cozy-country-r3f-scene/scripts/extract-public-assets.py
+      - name: Guard the viewer before starting WebGL 2
+        run: python3 scripts/apply-webgl2-preflight.py .work/cozy-country-r3f-scene
       - name: Download and verify extracted asset archive parts
         run: |
           base=https://github.com/shifatmasud/cozy-country-r3f-pages/releases/download/v1.0.0
